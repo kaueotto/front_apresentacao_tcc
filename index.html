@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Análise de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Análise de Pedidos</h1>
+            <button class="process-button" onclick="processarPedidos()">
+                Processar Pedidos
+            </button>
+            <button class="process-button" onclick="buscarResultados()">
+                Buscar Resultados
+            </button>
+        </div>
+        
+        <div class="grid-container">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>pedid</th>
+                        <th>IdCliente</th>
+                        <!-- <th>Status</th> -->
+                        <th>CliLimCredTot</th>
+                        <th>CliSimples</th>
+                        <th>CliMicroEmpreendedor</th>
+                        <th>CliConsFinal</th>
+                        <th>HistPagPONTUAL</th>
+                        <th>HistPag8_15</th>
+                        <th>HistPag16_30</th>
+                        <th>HistPag31_60</th>
+                        <th>HistPag_60</th>
+                        <th>HistPagAVISTA</th>
+                        <th>QtConsultado</th>
+                        <th>PefinNumOcorrencia</th>
+                        <th>PefinValorTotal</th>
+                        <th>RefinNumOcorrencia</th>
+                        <th>RefinValorTotal</th>
+                        <th>DividasVencNumOcorrencia</th>
+                        <th>DividasVencValorTotal</th>
+                        <th>FalenConcNumOcorrencia</th>
+                        <th>CheqSFundoNumOcorrencia</th>
+                        <th>RechequeNumOcorrencia</th>
+                        <th>PartFalenNumOcorrencia</th>
+                        <th>Resultado</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody id="pedidosTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
